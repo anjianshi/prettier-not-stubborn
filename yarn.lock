@@ -7119,18 +7119,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.0.2":
-  version: 3.0.2
-  resolution: "prettier@npm:3.0.2"
-  bin:
-    prettier: bin/prettier.cjs
-  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
-  languageName: node
-  linkType: hard
-
-"prettier@workspace:.":
+"prettier-not-stubborn@workspace:.":
   version: 0.0.0-use.local
-  resolution: "prettier@workspace:."
+  resolution: "prettier-not-stubborn@workspace:."
   dependencies:
     "@angular/compiler": 16.2.2
     "@babel/code-frame": 7.22.10
@@ -7252,9 +7243,18 @@ __metadata:
     wcwidth: 1.0.1
     yaml-unist-parser: 2.0.1
   bin:
-    prettier: ./bin/prettier.cjs
+    prettier-not-stubborn: ./bin/prettier.cjs
   languageName: unknown
   linkType: soft
+
+"prettier@npm:3.0.2":
+  version: 3.0.2
+  resolution: "prettier@npm:3.0.2"
+  bin:
+    prettier: bin/prettier.cjs
+  checksum: 118b59ddb6c80abe2315ab6d0f4dd1b253be5cfdb20622fa5b65bb1573dcd362e6dd3dcf2711dd3ebfe64aecf7bdc75de8a69dc2422dcd35bdde7610586b677a
+  languageName: node
+  linkType: hard
 
 "pretty-bytes@npm:6.1.1":
   version: 6.1.1

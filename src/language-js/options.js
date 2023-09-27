@@ -84,6 +84,22 @@ const options = {
     ],
   },
   singleAttributePerLine: commonOptions.singleAttributePerLine,
+  jsxElementParens: {
+    category: CATEGORY_JAVASCRIPT,
+    type: "choice",
+    default: "always",
+    description: "Include parentheses around JSX Element.",
+    choices: [
+      {
+        value: "always",
+        description: "Always include parens.",
+      },
+      {
+        value: "avoid",
+        description: "Omit parens when possible.",
+      },
+    ],
+  },
 };
 
 export default options;

@@ -1,5 +1,5 @@
 {
-  "name": "prettier",
+  "name": "prettier-not-stubborn",
   "version": "3.0.3",
   "description": "Prettier is an opinionated code formatter",
   "bin": "./bin/prettier.cjs",
