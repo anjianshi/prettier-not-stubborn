@@ -457,8 +457,9 @@ const NO_WRAP_PARENTS = new Set([
   "JsExpressionRoot",
 ]);
 function maybeWrapJsxElementInParens(path, elem, options) {
+  // https://github.com/prettier/prettier/issues/2724#issuecomment-1010212039
   if (options.jsxElementParens === "avoid") {
-    return elem
+    return elem;
   }
 
   const { parent } = path;
