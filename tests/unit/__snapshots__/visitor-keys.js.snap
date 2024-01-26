@@ -28,6 +28,13 @@ exports[`visitor keys estree 1`] = `
     "typeParameters",
     "predicate",
   ],
+  "AsConstExpression": [
+    "expression",
+  ],
+  "AsExpression": [
+    "expression",
+    "typeAnnotation",
+  ],
   "AssignmentExpression": [
     "left",
     "right",
@@ -266,7 +273,6 @@ exports[`visitor keys estree 1`] = `
   "ExportAllDeclaration": [
     "source",
     "attributes",
-    "assertions",
     "exported",
   ],
   "ExportDefaultDeclaration": [
@@ -280,7 +286,6 @@ exports[`visitor keys estree 1`] = `
     "specifiers",
     "source",
     "attributes",
-    "assertions",
   ],
   "ExportNamespaceSpecifier": [
     "exported",
@@ -359,13 +364,13 @@ exports[`visitor keys estree 1`] = `
     "specifiers",
     "source",
     "attributes",
-    "assertions",
   ],
   "ImportDefaultSpecifier": [
     "local",
   ],
   "ImportExpression": [
     "source",
+    "options",
     "attributes",
   ],
   "ImportNamespaceSpecifier": [
@@ -655,6 +660,10 @@ exports[`visitor keys estree 1`] = `
   ],
   "ReturnStatement": [
     "argument",
+  ],
+  "SatisfiesExpression": [
+    "expression",
+    "typeAnnotation",
   ],
   "SequenceExpression": [
     "expressions",
@@ -1011,6 +1020,9 @@ exports[`visitor keys estree 1`] = `
     "expression",
     "typeAnnotation",
   ],
+  "TypeOperator": [
+    "typeAnnotation",
+  ],
   "TypeParameter": [
     "bound",
     "default",
@@ -1029,6 +1041,7 @@ exports[`visitor keys estree 1`] = `
   ],
   "TypeofTypeAnnotation": [
     "argument",
+    "typeArguments",
   ],
   "UnaryExpression": [
     "argument",
@@ -1373,6 +1386,20 @@ exports[`visitor keys graphql 1`] = `
 
 exports[`visitor keys html 1`] = `
 {
+  "angularControlFlowBlock": [
+    "children",
+    "parameters",
+  ],
+  "angularControlFlowBlockParameter": [],
+  "angularControlFlowBlockParameters": [
+    "children",
+  ],
+  "angularIcuCase": [
+    "expression",
+  ],
+  "angularIcuExpression": [
+    "cases",
+  ],
   "attribute": [],
   "cdata": [],
   "comment": [],
