@@ -122,6 +122,7 @@ export default [
 
       // Internal rules
       "prettier-internal-rules/jsx-identifier-case": "error",
+      "prettier-internal-rules/massage-ast-parameter-names": "error",
       "prettier-internal-rules/no-identifier-n": "error",
       "prettier-internal-rules/prefer-fs-promises-submodule": "error",
 
@@ -270,7 +271,7 @@ export default [
       sourceType: "script",
     },
     rules: {
-      strict: "error",
+      strict: ["error", "global"],
       "unicorn/prefer-module": "off",
       "unicorn/prefer-node-protocol": "off",
     },
@@ -287,8 +288,7 @@ export default [
       "unicorn/prefer-top-level-await": "error",
     },
   },
-  ...compat.env({ jest: true }).map((config) => ({
-    ...config,
+  {
     files: [
       "tests/config/**/*.js",
       "tests/format/**/jsfmt.spec.js",
@@ -298,6 +298,9 @@ export default [
       "scripts/release/__tests__/**/*.spec.js",
     ],
     plugins: { jest: eslintPluginJest },
+    languageOptions: {
+      globals: eslintPluginJest.environments.globals.globals,
+    },
     rules: {
       "@stylistic/js/quotes": [
         "error",
@@ -315,7 +318,7 @@ export default [
       ],
       "jest/prefer-to-be": "error",
     },
-  })),
+  },
   {
     files: ["tests/format/**/*.js"],
     rules: {
