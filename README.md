@@ -1,3 +1,5 @@
+已使用 `js-packages/presets-prettier/plugin-jsx-element-parens.mjs` 代替单独此包的功能：<https://github.com/anjianshi/js-packages>。
+
 [![Prettier Banner](https://unpkg.com/prettier-logo@1.0.3/images/prettier-banner-light.svg)](https://prettier.io)
 
 <h2 align="center">Opinionated Code Formatter</h2>
